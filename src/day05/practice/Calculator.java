@@ -1,4 +1,6 @@
-package day04.practice;
+package day05.practice;
+
+
 
 class CalculatorAll {
 	public void Newmethod(){
@@ -29,7 +31,7 @@ public class Calculator{
 	public static void main(String[] args) {
 		
 		CalculatorAll cal = new CalculatorAll();
-		cal.a=9;
+		cal.a=10;
 		cal.b=5;
 		cal.Newmethod();
 	}
