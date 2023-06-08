@@ -17,6 +17,7 @@ public class MathUtilDemo {
 		System.out.println(MathUtil.isEven(9));
 		
 		//Example of static methods from java Library
+		
 		Integer.parseInt("10");
 		Math.sqrt(3);
 	}
