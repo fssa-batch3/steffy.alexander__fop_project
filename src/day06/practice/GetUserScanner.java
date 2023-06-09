@@ -22,10 +22,7 @@ public class GetUserScanner {
 		System.out.println("Enter a degree: ");
 		
 		String degrees=sc.next();
-		
-		
-		
-		
+
 		System.out.println("Your Degree is "+degrees);
 		
 	sc.close();
