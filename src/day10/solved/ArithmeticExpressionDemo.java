@@ -7,7 +7,7 @@ public class ArithmeticExpressionDemo {
 		Scanner sc = new Scanner(System.in);
 		int n1 = 50;
 		int n2 = sc.nextInt();
-		System.out.println("Enter number");
+		System.out.println("Enter number:");
 
 		// 10 will come
 		// what if n2 is zero?
