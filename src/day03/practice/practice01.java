@@ -25,7 +25,7 @@ public static void main(String[] args) {
      System.out.println("g=" +g);
      
      char mychar= 's';
-     System.out.println("mychar=" +mychar);
+     System.out.println("mychar=" + mychar);
      
 
 }

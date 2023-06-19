@@ -4,8 +4,8 @@ public class StringCompareDemo {
 	public static void main(String[] args) {
 
 		// input
-		String name1 = "    Surya     ";
-		String name2 = "Surya";
+		String name1 = "    Steffy     ";
+		String name2 = "Steffy";
 
 		// output
 		System.out.println("Comparing without .trim()");

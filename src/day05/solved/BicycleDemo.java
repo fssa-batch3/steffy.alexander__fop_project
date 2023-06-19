@@ -18,7 +18,7 @@ class Bicycle {
 	}
 
 	void speedUp(int increment) {
-		speed = speed + increment;
+		 speed = speed + increment;
 	}
 
 	void applyBrakes(int decrement) {
@@ -45,7 +45,9 @@ public class BicycleDemo {
 		// Invoke methods on
 		// those objects
 		bike1.speedUp(10);
+		bike1.speedUp(50);
 		bike1.changeGear(2);
+		bike1.applyBrakes(12);
 		bike1.printStates();
 
 		bike2.speedUp(10);

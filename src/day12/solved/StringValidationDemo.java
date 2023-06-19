@@ -14,7 +14,7 @@ public class StringValidationDemo {
 		} else if (input.trim().isEmpty()) {
 			System.out.println("The input String is Empty");
 		} else {
-			System.out.println("The Input String is: " + input);
+			System.out.println("The Input String is: " + input.trim());
 		}
 
 	}
