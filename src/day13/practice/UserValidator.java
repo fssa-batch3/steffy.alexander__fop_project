@@ -56,17 +56,19 @@ public class UserValidator {
 class UserValidation {
 	public static void validate(User user) {
 		System.out.println(user.getId());
-		if(user.getId()>=0) {
+		if (user.getId() >= 0) {
 			System.out.println("id is verified");
-		}
-		else {
+		} else {
 			System.out.println("id should be positive");
 		}
-		
-		
-		System.out.println(user.getName());
-		System.out.println(user.getPassword());
-		System.out.println(user.getEmail());
-	}
 
+		if (user.getName().length() > 2) {
+			System.out.println("name is valid");
+	}else
+
+	{
+			System.out.println("name is invalid");
+		
+	}
+       if(user.getPassword(PasswordValidation)) {
 }

@@ -1,36 +1,33 @@
 package day04.practice;
 
-class CalculatorAll {
-	public void Newmethod(){
-	   add();
-	   sub();
-	   multiply();
-	   divide();
-   }
+public class Calculator {
 	
 	int a,b;
 	
-		public void add() {
-			System.out.println("add= "+ (a+b));
+		public int add(int args,int a) {
+
+			return args + a;
 		}
-		public void sub() {
-			System.out.println("sub= "+ (a-b));
+		public int sub(int args,int a) {
+			return args - a;
 		}
-		public void multiply() {
-			System.out.println("multiply= "+ (a*b));
+		public int multiply(int args,int a) {
+			return args * a;
 		}
-		public void divide() {
-			System.out.println("division= "+ (a%b));
+		public int divide(int args,int a) {
+			return args / a;
 		}
+		
+		
 		
 	}
 
-public class Calculator{
-	public static void main(String[] args) {
-		
-		CalculatorAll cal = new CalculatorAll();
-		cal.a=9;
-		cal.b=5;
-		cal.Newmethod();
-	}
-}
+//public class Calculator{
+//	public static void main(String[] args) {
+//		
+//		CalculatorAll cal = new CalculatorAll();
+//		cal.a=9;
+//		cal.b=5;
+//		cal.Newmethod();
+//	}
+//}
