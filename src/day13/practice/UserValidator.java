@@ -1,5 +1,8 @@
 package day13.practice;
 
+import day13.solved.StringEmailValidationDemo;
+
+
 class User {
 	int id;
 	String name;
@@ -54,21 +57,23 @@ public class UserValidator {
 }
 
 class UserValidation {
-	public static void validate(User user) {
-		System.out.println(user.getId());
-		if (user.getId() >= 0) {
+	public static void validate(User recUser) {
+//		System.out.println(recUser.getId());
+		if (recUser.getId() >= 0) {
 			System.out.println("id is verified");
 		} else {
 			System.out.println("id should be positive");
 		}
 
-		if (user.getName().length() > 2) {
+		if (recUser.getName().length() > 2) {
 			System.out.println("name is valid");
-	}else
-
-	{
+	}else{
 			System.out.println("name is invalid");
 		
 	}
-       if(user.getPassword(PasswordValidation)) {
-}
+//		verifing the password
+		PasswordValidation.passvalidation(recUser.getPassword());
+		StringEmailValidationDemo.Emailvalidation(recUser.getEmail());
+		
+	}
+	}

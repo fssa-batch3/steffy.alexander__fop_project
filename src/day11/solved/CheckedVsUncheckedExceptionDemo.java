@@ -4,7 +4,8 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 
 public class CheckedVsUncheckedExceptionDemo {
-	static int divider(int a, int b) throws ArithmeticException {
+	static int divider(int a, int b) throws ArithmeticException {// unchecked exception
+		// try catch doesn't need
 		try {
 			int c = a / b; // if b is zero
 			return c;
@@ -13,7 +14,8 @@ public class CheckedVsUncheckedExceptionDemo {
 		}
 	}
 
-	static void fileHandlerDemo(String fileName) throws FileNotFoundException {
+	static void fileHandlerDemo(String fileName) throws FileNotFoundException {// checked exception
+		// try catch needed
 		try {
 			// This line may throw a FileNotFoundException
 			FileReader fileReader = new FileReader(fileName);

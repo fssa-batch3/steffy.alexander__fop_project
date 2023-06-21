@@ -8,13 +8,13 @@ public class DateDemo3 {
 	public static void main(String[] args) {
 
 		// Date in String format
-		String dateString = "2023-05-21";
+		String dateString = "21/06/2023";
 
 		// Format the DateString is In.
-		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
 		// Converting dateString to LocalDate
-		LocalDate parsedDate = LocalDate.parse(dateString, formatter);
+		LocalDate parsedDate = LocalDate.parse(dateString, formatter);//2023-06-21
 		System.out.println(parsedDate);
 		System.out.println(parsedDate.getYear());
 		System.out.println(parsedDate.getMonth());

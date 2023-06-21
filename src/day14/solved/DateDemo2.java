@@ -1,22 +1,22 @@
 package day14.solved;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
-	import java.time.LocalDate;
-	import java.time.format.DateTimeFormatter;
+public class DateDemo2 {
 
-	public class DateDemo2 {
+	public static void main(String[] args) {
 
-		public static void main(String[] args) {
+		// today's Date
+		LocalDate today = LocalDate.now();// 2023-06-21
+		System.out.println(today);
 
-			// today's Date
-			LocalDate today = LocalDate.now();
+		// Expected format
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MMM/yyyy");// dd/MM/yyyy
 
-			// Expected format
-			DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MMM/yyyyyy");
-
-			// Converting date to the format
-			String formattedDate = today.format(formatter);
-			System.out.println(formattedDate);
-		}
-
+		// Converting date to the format
+		String formattedDate = today.format(formatter);
+		System.out.println(formattedDate);
 	}
+
+}
