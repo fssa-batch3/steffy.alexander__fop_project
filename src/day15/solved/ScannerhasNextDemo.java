@@ -11,8 +11,7 @@ public class ScannerhasNextDemo {
 		// Create a scanner to read from the string
 		Scanner scanner = new Scanner(sentence);
 
-		
-		while(scanner.hasNext()) {
+		while (scanner.hasNext()) {
 			System.out.println(scanner.next());
 		}
 
